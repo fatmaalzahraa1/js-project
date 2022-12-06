@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <img src="m1.jpg" alt="">
+    <img src="m1.jpg" alt="">
+    <img src="m1.jpg" alt="">
+    <img src="m1.jpg" alt="">
+    <img src="m1.jpg" alt="">
+
+
+    <script>
+        var imges=["m2.jpg"]
+var img=document.getElementsByTagName("img");
+
+var x=0;
+function circle(){
+
+    for( i=0;i<imges.length;i++)
+ {
+        img[x].src=imges[i];
+    
+        x++;
+    }
+
+
+
+}
+setInterval(circle,2000)
+
+
+
+    </script>
+</body>
+</html>

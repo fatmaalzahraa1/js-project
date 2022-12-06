@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+</style>
+<body>
+    <h1>showing pics</h1><hr>
+    <button onclick="next()">next</button>
+    <button onclick="slidshow()">slidshow</button>
+    <button onclick="stop()">stop</button>
+    <button onclick="next()">previous</button><br><br>
+
+        <img src="1.jpg" alt="" id="my-img">
+
+  
+  
+</body>
+<script>
+
+var images=["2.jpg","3.jpg","4.jpg","5.jpg","6.jpg"];
+
+var id;
+function next()
+
+{
+    if(i=images.length-1)
+    {i=0;
+
+         pic=setInterval(function(){
+        
+            img.src= images[i];
+            i++;
+        },1000)
+    }
+
+
+}
+function slidshow()
+{
+id=setInterval(function()
+{
+    var i=Math.floor( Math.random()*images.length);
+    var img=document.getElementById("my-img");
+    img.src=images[i];
+    i++;
+  
+},1000)
+}
+
+function stop()
+{    clearInterval(id);
+}
+
+</script>
+</html>
