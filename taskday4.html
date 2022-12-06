@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form onsubmit ="return validateForm()">
+    <h2> Registration Form</h2><br><br>
+      <label for="name"> Full Name </label><br>
+      <input type="text" onfocus="myfunction()" onblur="vliadtion()" id="name" name="user" placeholder="Enter your Name" onblur="x()  "/>
+      <small id="err" style="color: red; display: none;">error</small>
+      <br /><br>
+      <label for="email"> Email </label><br>
+      <input type="email"  id="email" name="email" />
+      <br /><br>
+      <label for="pass"> Password </label><br>
+      <input type="password" id="pswd1" name="password" >
+      <small id="err" style="color: red; display: none;"></small>
+
+      <br /><br>
+      <label for="pass"> Re-Password </label><br>
+      <input type="password" id="pswd2" name="password" >
+      <small id="err" style="color: red; display: none;"></small>
+
+      
+<br>  <br><br>
+      
+    
+      <label>Select Cities</label><br>
+      <select id="cities" name="cities">
+        <optgroup label="choose your city">
+ <option value="Aswan">Aswan</option>
+        <option value="Cairo">Cairo</option>
+        <option value="Alex">Alex</option>
+        <option value="Qena">Qena</option>
+    </optgroup>
+      </select>
+      <br><br><br>
+
+      <input type="checkbox" id="condition" name="condition" value="conditions" />
+      <label for="conditions">I accept the terms and conditions </label>
+      <br>
+      
+      <br><br><br>
+      <button type="button" onclick="cfunction()"> SUBMIT</button>
+
+      <h1 id="hello"></h1>
+    </form>
+</body>
+<script src="taskday4.js"></script>
+</html>
