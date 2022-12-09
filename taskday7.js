@@ -1,14 +1,14 @@
 class Person {
     static #count = 0;
     #id;
-    constructor(a, b, c) {
+    constructor(a, b) {
         console.log(this.constructor)
         if (this.constructor == Person) {
             throw 'error this is abstract class'
         }
         this.name = a;
         this.age = b;
-        this.salary = c;
+     
     }
     setID(x) {
 
@@ -25,6 +25,7 @@ class Employee extends Person {
     constructor(a, b, c) {
         Employee.count++;
         super(a, b, c)
+           this.salary = c;
     }
     static displayHTRules() {
         console.log("a:fatma,b:radwa,c:ola");
