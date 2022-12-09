@@ -100,23 +100,15 @@ console.log(x)
 
 });
 
-fruits.forEach(function (x) {
-          
-    if(x.indexOf("a",0)==0)
-    {
-       console.log(x)
-    }
-})
+var f =fruits.filter((x)=>{
+    return x[0]==="a"
+   }) 
+   console.log(f)
 
-   var filtered =[];
-   
-       fruits.forEach(function (x) {
-           if(x.indexOf("b",0)==0 || x.indexOf("s",0)==0 )
-   {
-    filtered .push(x)
-   }
-       })
-       console.log(filtered )
+  var filtered =fruits.filter((x)=>{
+    return x[0]==="a"||x [0]==="b"
+   }) 
+   console.log(filtered)
 
 //  task 6
 var countries=["Algeria","Andorra","Angola","Angola","Albania","Albania"];
