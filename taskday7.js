@@ -100,7 +100,7 @@ console.log(x)
 
 });
 
-var f =fruits.filter((x)=>{
+var f =fruits.filter(function(x){
     return x[0]==="a"
    }) 
    console.log(f)
